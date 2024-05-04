@@ -6,12 +6,13 @@ let studentProfile = {
   },
 };
 
-let studentScores = {
-  math: 30,
-  english: 70,
-  tech: 100,
+let additionalProperties = {
+  photo: "https://placedog.net/500",
+  hobbies: ["Football", "Coding"],
 };
 
 // Start coding here
-
+let newStudentProfile = { ...studentProfile, ...additionalProperties };
 console.log(newStudentProfile);
+
+
